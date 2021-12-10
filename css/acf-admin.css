@@ -1,0 +1,28 @@
+.wp-block {
+  clear: both;
+}
+.acf-block-body {
+  border: 1px solid antiquewhite;
+  padding: 10px;
+  display: block;
+  clear: both;
+}
+div[data-align="center"],
+div[data-align="right"] {
+  max-width: 840px;
+  margin: 28px auto;
+  clear: both;
+  height: initial;
+}
+
+.wp-block[data-align="right"] > * {
+  float: right;
+  margin-left: 2em /*!rtl:end:ignore*/;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.alignright {
+  float: none;
+}

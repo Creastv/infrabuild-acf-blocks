@@ -1,0 +1,38 @@
+.inb-title-block {
+  margin-bottom: 20px;
+  clear: both;
+  .inb-title-wraper {
+    position: relative;
+    padding: 20px 20px 20px 25px;
+    .inb-title {
+      margin: 0;
+      padding: 0;
+    }
+    svg {
+      width: 37px;
+      transform: translate(-25px, 20px);
+    }
+  }
+}
+
+.inb-title-block.aligncenter {
+  .inb-title-wraper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    svg {
+      transform: translate(15px, -20px);
+    }
+  }
+}
+
+.inb-title-block.alignright {
+  .inb-title-wraper {
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    svg {
+      transform: translate(15px, -20px);
+    }
+  }
+}
