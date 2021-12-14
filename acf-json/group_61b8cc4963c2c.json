@@ -1,11 +1,11 @@
 {
-    "key": "group_61b34c2f66b1b",
-    "title": "inb block - Title",
+    "key": "group_61b8cc4963c2c",
+    "title": "inb block - Video hero",
     "fields": [
         {
-            "key": "field_61b34c5bee3cf",
-            "label": "Tytuł",
-            "name": "title",
+            "key": "field_61b8cc4a0840b",
+            "label": "Video mp4",
+            "name": "video_mp4",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -15,17 +15,17 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Your title",
+            "default_value": "",
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_61b34c63ee3d0",
-            "label": "Tag",
-            "name": "tag",
-            "type": "radio",
+            "key": "field_61b8cc4a087f7",
+            "label": "Video webm",
+            "name": "video_web",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,27 +34,17 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "h1": "h1",
-                "h2": "h2",
-                "h3": "h3",
-                "h4": "h4",
-                "h5": "h5",
-                "h6": "h6",
-                "p": "p"
-            },
-            "allow_null": 0,
-            "other_choice": 0,
-            "default_value": "h2",
-            "layout": "vertical",
-            "return_format": "value",
-            "save_other_choice": 0
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
-            "key": "field_61b86d7ac71e9",
-            "label": "Text color",
-            "name": "text_color",
-            "type": "color_picker",
+            "key": "field_61b8cc4a08be3",
+            "label": "Poster",
+            "name": "poster",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -63,7 +53,16 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": ""
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -71,7 +70,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/inb-title"
+                "value": "acf\/inb-video-hero"
             }
         ]
     ],
@@ -83,5 +82,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1639476860
+    "modified": 1639500927
 }

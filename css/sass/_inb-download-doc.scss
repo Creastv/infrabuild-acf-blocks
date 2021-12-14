@@ -1,0 +1,20 @@
+.inb-download-doc {
+  .inb-docs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+      padding: 10px 30px;
+      a {
+        color: #101820;
+        font-size: 1.7rem;
+        font-weight: bold;
+        &:hover {
+          color: #00aa13;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.inb-separator {
+  padding: 10px 0;
+  .inb-separator-wrap {
+    position: relative;
+    hr {
+      border: 0;
+      border-top: 1px solid #fff;
+      opacity: 0.8;
+    }
+    p {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      padding: 0 10px;
+      margin: 0;
+      background-color: #fff;
+    }
+  }
+}
+
+.inb-separator.aligncenter {
+  p {
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
+.inb-separator.alignright {
+  p {
+    text-align: center;
+    right: 0%;
+    transform: translate(0, -50%) !important;
+  }
+}

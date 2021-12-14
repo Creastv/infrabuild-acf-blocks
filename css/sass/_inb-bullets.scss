@@ -1,0 +1,30 @@
+.inb-bullets {
+  .bullets {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+    li {
+      text-align: center;
+      width: 25%;
+      @media #{$sm} {
+        width: 50%;
+      }
+      @media #{$xs} {
+        width: 100%;
+      }
+      .bullet {
+        padding: 15px;
+        .fas {
+          font-size: 70px;
+          color: #54565b;
+        }
+        p {
+          color: #54565b;
+        }
+      }
+    }
+  }
+}
