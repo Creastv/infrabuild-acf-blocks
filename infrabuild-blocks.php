@@ -50,28 +50,19 @@ function my_acf_json_load_point( $paths ) {
    $paths[] = MY_PLUGIN_DIR_PATH. '/acf-json';   return $paths;
 }
 
-/**
- * Esta función agrega los parámetros "async" y "defer" a recursos de Javascript.
- * Solo se debe agregar "async" o "defer" en cualquier parte del nombre del 
- * recurso (atributo "handle" de la función wp_register_script).
- *
- * @param $tag
- * @param $handle
- *
- * @return mixed
- */
-function mg_add_async_defer_attributes( $tag, $handle ) {
 
-	// Busco el valor "async"
+/**
+ * This function adds the "async" and "defer" parameters to Javascript resources.
+ */
+function inb_add_async_defer_attributes( $tag, $handle ) {
 	if( strpos( $handle, "async" ) ):
 		$tag = str_replace(' src', ' async="async" src', $tag);
 	endif;
 
-	// Busco el valor "defer"
 	if( strpos( $handle, "defer" ) ):
 		$tag = str_replace(' src', ' defer="defer" src', $tag);
 	endif;
 
 	return $tag;
 }
-add_filter('script_loader_tag', 'mg_add_async_defer_attributes', 10, 2);
+add_filter('script_loader_tag', 'inb_add_async_defer_attributes', 10, 2);

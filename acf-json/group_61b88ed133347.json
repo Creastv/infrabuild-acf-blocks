@@ -1,6 +1,6 @@
 {
     "key": "group_61b88ed133347",
-    "title": "inb block - team swiper",
+    "title": "inb block - Team swiper",
     "fields": [
         {
             "key": "field_61b88f6723ac5",
@@ -101,7 +101,7 @@
                             "save_format": "element",
                             "allow_null": 0,
                             "show_preview": 1,
-                            "enqueue_fa": 0,
+                            "enqueue_fa": 1,
                             "fa_live_preview": "",
                             "choices": []
                         },
@@ -142,5 +142,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1639485499
+    "modified": 1639731148
 }

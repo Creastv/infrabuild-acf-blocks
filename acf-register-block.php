@@ -156,6 +156,39 @@ function inb_blocks() {
               wp_enqueue_style( 'inb-blocks-css', plugin_dir_url( __FILE__ ) . 'css/acf-blocks.min.css' );
             },
         ));
+        acf_register_block_type(array(
+            'name'        => 'inb-about-us',
+            'mode'				=> 'preview',
+            'title'       => __('About us'),
+            'category'    => 'inb-category',
+            'supports'		=> array(
+              'align' => false,
+              'mode'  => true,
+              'jsx'   => true
+            ),
+            'render_template' => plugin_dir_path(__FILE__) . 'acf-templates/inb-about-us.php',
+            'icon'            => '<svg xmlns="http://www.w3.org/2000/svg" width="37.989" height="37.988" viewBox="0 0 37.989 37.988"><path id="Shape_5_copy_4" data-name="Shape 5 copy 4" d="M107.977,422.9h12.049V396.96h25.94V384.911H107.977" transform="translate(-107.977 -384.911)" fill="#00aa13"/></svg>',
+            'enqueue_assets'  => function(){
+              wp_enqueue_style( 'inb-blocks-css', plugin_dir_url( __FILE__ ) . 'css/acf-blocks.min.css' );
+            },
+        ));
+        acf_register_block_type(array(
+            'name'        => 'inb-post',
+            'mode'				=> 'preview',
+            'title'       => __('Display posts'),
+            'category'    => 'inb-category',
+            'supports'		=> array(
+              'align' => false,
+              'mode'  => true,
+              'jsx'   => false
+            ),
+            'render_template' => plugin_dir_path(__FILE__) . 'acf-templates/inb-post.php',
+            'icon'            => '<svg xmlns="http://www.w3.org/2000/svg" width="37.989" height="37.988" viewBox="0 0 37.989 37.988"><path id="Shape_5_copy_4" data-name="Shape 5 copy 4" d="M107.977,422.9h12.049V396.96h25.94V384.911H107.977" transform="translate(-107.977 -384.911)" fill="#00aa13"/></svg>',
+            'enqueue_assets'  => function(){
+              wp_enqueue_style( 'inb-blocks-css', plugin_dir_url( __FILE__ ) . 'css/acf-blocks.min.css' );
+            },
+        ));
+        
         acf_register_block(array(
           'name'              => 'inb-team-slider',
           'mode'              => 'preview',

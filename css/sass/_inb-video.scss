@@ -1,10 +1,12 @@
 .inb-video {
   .full {
-    width: 100vw;
-    margin-left: -50vw;
-    left: 50%;
+    width: calc(100vw - 20px);
+    margin-left: calc(-50vw + 50% + 10px);
     position: relative;
-    // padding: 50px 0;
+    @media #{$xs} {
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+    }
     .wraper {
       .bg {
         position: absolute;
@@ -105,7 +107,7 @@
 .video-hero {
   .inb-title {
     @media #{$xs} {
-      font-size: 1rem !important;
+      font-size: 2rem !important;
       br {
         display: none;
       }
@@ -113,7 +115,7 @@
   }
   .wraper {
     //   max-height: 60vh;
-    height: 62vh;
+    height: 72vh;
     overflow: hidden;
     // @media #{$lg} {
     //   height: inherit;
@@ -144,6 +146,12 @@
       left: 0;
       transform: translate(0, -50%) scale(1);
       transition: transform 0.2s;
+      padding: 15px;
+      .inb-title {
+        @media #{$xs} {
+          font-size: 2rem;
+        }
+      }
     }
     .entry-content-video-hero.video-active {
       transform: translate(0, -50%) scale(0) !important;
